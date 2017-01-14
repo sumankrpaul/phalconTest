@@ -27,15 +27,15 @@
 <br>
 
 <div class="row">
-<form>
+<form onsubmit="return insert()">
 	<div class="col-md-3">
-		<input type="text" class="form-control" placeholder="Enter First name" required/>
+		<input type="text" id="fname" class="form-control" placeholder="Enter First name" required/>
 	</div>
 	<div class="col-md-3">
-		<input type="text" class="form-control" placeholder="Enter Middle name" required/>
+		<input type="text" id="mname" class="form-control" value='' placeholder="Enter Middle name" />
 	</div>
 	<div class="col-md-3">
-		<input type="text" class="form-control" placeholder="Enter Last name" required/>
+		<input type="text" id="lname" class="form-control" placeholder="Enter Last name" required/>
 	</div>
 	<div class="col-md-3">
 		<input type="submit" class="btn btn-success" value="Insert to the table" />

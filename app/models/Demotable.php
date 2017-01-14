@@ -79,7 +79,7 @@ class Demotable extends Model
     	return $condition;
     }
     public function insertValue($valueList){
-    	$condition = $this->db->execute("INSERT INTO demotable VALUES (':firstname',':middlename',':lastname')",$valueList);
+    	$condition = $this->db->execute("INSERT INTO demotable VALUES (:firstname,:middlename,:lastname)",$valueList);
     	return $condition;
     }
 }

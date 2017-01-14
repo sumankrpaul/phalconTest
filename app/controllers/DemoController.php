@@ -24,6 +24,17 @@ class DemoController extends ControllerBase
     	}
     	//return $result;
     }
+    
+    public function insertAction($firstname,$lastname,$middlename = null) {
+    	$this->view->disable();
+    	$data = array("firstname" => $firstname,"middlename" => $middlename, "lastname" => $lastname);
+    	//var_dump($data);
+    	if($this->model->insertValue($data)){
+    		echo true;
+    	}else{
+    		echo false;
+    	}
+    }
 
 }
 
