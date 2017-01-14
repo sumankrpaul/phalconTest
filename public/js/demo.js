@@ -5,7 +5,7 @@ function del(name) {
 	
 	$.ajax({
 		 type:'post',
-       url:'delete/'+name,
+       url:'demo/delete/'+name,
        processData: false,
        contentType: false,
        data:null,
